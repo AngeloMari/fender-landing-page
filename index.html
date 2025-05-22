@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fender</title>
+  </head>
+  <body>
+    <header id="header">
+      <a href="#video-container"
+        ><img id="header-img" src="images/logo.jpg"
+      /></a>
+      <p>"Transforming Music One Guitar at a Time."</p>
+      <nav id="nav-bar">
+        <a class="nav-link" href="#video-container"
+          ><span class="nav-link-text">The Player Series</span></a
+        >
+        <a class="nav-link" href="#product-container"
+          ><span class="nav-link-text">Products</span></a
+        >
+        <a class="nav-link" href="#form"
+          ><span class="nav-link-text">Newsletter</span></a
+        >
+      </nav>
+      <button class="icon" onclick="navToggle()">
+        <i class="fa fa-bars"></i>
+      </button>
+    </header>
+    <nav id="mobile-nav-bar">
+      <a class="mobile-nav-link" href="#video-container"
+        ><span class="mobile-nav-link-text">The Player Series</span></a
+      >
+      <a class="mobile-nav-link" href="#product-container"
+        ><span class="mobile-nav-link-text">Products</span></a
+      >
+      <a class="mobile-nav-link" href="#form"
+        ><span class="mobile-nav-link-text">Newsletter</span></a
+      >
+    </nav>
+    <main>
+      <div id="video-container">
+        <iframe
+          id="video"
+          src="https://www.youtube.com/embed/Uy5T-T8MZac?autoplay=1&mute=1"
+          title="The Player Series | Fender"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
+        <h1 id="video-caption">Iconic Sound, Timeless Style</h1>
+        <hr />
+      </div>
+      <div id="product-container">
+        <h2>Our Products</h2>
+        <div id="guitar-container">
+          <div class="product-divider">
+            <div class="image-wrapper">
+              <img
+                class="product-img"
+                src="images/product 1.png"
+                alt="American Vintage II 1951 Telecaster® in butterscotch finish"
+              />
+            </div>
+            <p class="product-name">American Vintage II 1951 Telecaster®</p>
+            <p class="product-desc">Powerful and ready to make a statement.</p>
+          </div>
+          <div class="product-divider">
+            <div class="image-wrapper">
+              <img
+                class="product-img"
+                src="images/product 2.png"
+                alt="Mike McCready Stratocaster® in sunburst relic finish"
+              />
+            </div>
+            <p class="product-name">Mike McCready Stratocaster®</p>
+            <p class="product-desc">
+              The legendary sound, built to rock every stage.
+            </p>
+          </div>
+          <div class="product-divider">
+            <div class="image-wrapper">
+              <img
+                class="product-img"
+                src="images/product 3.png"
+                alt="American Vintage II 1966 Jazzmaster® in candy apple red finish"
+              />
+            </div>
+            <p class="product-name">American Vintage II 1966 Jazzmaster®</p>
+            <p class="product-desc">
+              Soulful tones meet endless possibilities.
+            </p>
+          </div>
+          <div class="product-divider">
+            <div class="image-wrapper">
+              <img
+                class="product-img"
+                src="images/product 4.png"
+                alt="Vintera® II '60s Precision Bass®"
+              />
+            </div>
+            <p class="product-name">Vintera® II '60s Precision Bass®</p>
+            <p class="product-desc">
+              The muscle behind music, designed for the bold.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="newsletter">
+        <div id="nl-column1">
+          <h2 class="newsletter-text">Don't Miss Out!</h2>
+          <p class="newsletter-text">
+            Be the first to know about new products, featured content, exclusive
+            offers, and giveaways.
+          </p>
+          <form
+            id="form"
+            action="https://www.freecodecamp.com/email-submit"
+            method="POST"
+          >
+            <fieldset>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email address"
+                required
+              />
+              <input type="submit" name="submit" id="submit" value="Sign up" />
+            </fieldset>
+          </form>
+        </div>
+        <div id="nl-column2">
+          <img
+            id="newsletter-img"
+            src="images/newsletter.jpg"
+            alt="The George Harrison signature all-rosewood-telecaster"
+          />
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <p>
+        Copyright © 2025 Fender Musical Instruments Corporation. All Rights
+        Reserved.
+      </p>
+      <div id="visit-us">
+        <p>Visit Us:</p>
+        <div id="social-icons">
+          <a
+            href="https://www.instagram.com/fender/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/FenderPH/?brand_redir=84437728562#"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/user/fendermusical"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a
+            href="https://www.tiktok.com/@fender"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-tiktok"></i
+          ></a>
+          <a
+            href="https://x.com/Fender"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-x-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
