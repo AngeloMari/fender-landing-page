@@ -36,7 +36,7 @@ html {
 }
 #header-img {
   width: 20%;
-  min-width: 75px;
+  min-width: 85px;
   max-width: 100px;
   aspect-ratio: 2.35/1;
   object-fit: cover;
@@ -95,7 +95,7 @@ html {
   cursor: pointer;
 }
 .fa-bars {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: white;
 }
 
