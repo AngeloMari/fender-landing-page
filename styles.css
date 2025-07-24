@@ -16,7 +16,7 @@ body {
   overflow-x: hidden;
 }
 html {
-  scroll-padding-top: 12vh;
+  scroll-padding-top: 8vh;
   scroll-behavior: smooth;
   overflow-y: scroll;
 }
@@ -29,7 +29,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 12vh;
+  height: 8vh;
   width: 100vw;
   padding: 1%;
   background-color: var(--header-color);
@@ -53,7 +53,7 @@ html {
 }
 #mobile-nav-bar {
   position: fixed;
-  top: 12vh;
+  top: 8vh;
   left: 0;
   right: 0;
   background-color: var(--footer-color);
@@ -360,6 +360,9 @@ hr {
 @media (min-width: 1024px) {
   .icon {
     display: none;
+  }
+  #header {
+    height: 10vh;
   }
   #nav-bar {
     display: flex;
