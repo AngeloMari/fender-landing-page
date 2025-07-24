@@ -7,7 +7,7 @@ function navToggle() {
 document
   .querySelectorAll("#mobile-nav-bar .mobile-nav-link")
   .forEach((link) => {
-    link.addEventListener("click", function (e) {
+    link.addEventListener("click", function () {
       setTimeout(() => {
         document.getElementById("mobile-nav-bar").classList.remove("open");
       }, 200);
@@ -27,7 +27,7 @@ document.addEventListener("click", function (event) {
   }
 });
 
-// Smoothly scroll always
+// Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", function (e) {
     const targetId = this.getAttribute("href");
@@ -36,7 +36,6 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     if (targetElement) {
       e.preventDefault();
       targetElement.scrollIntoView({ behavior: "smooth" });
-      history.pushState(null, null, targetId);
     }
   });
 });
